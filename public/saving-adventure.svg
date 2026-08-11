@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Saving Adventure</title>
+  <desc id="desc">A green shield with a golden coin and a small path.</desc>
+  <rect width="512" height="512" rx="112" fill="#007a4f"/>
+  <path d="M256 72 396 132v112c0 93-58 159-140 196-82-37-140-103-140-196V132L256 72Z" fill="#f7faf6"/>
+  <circle cx="256" cy="224" r="76" fill="#f5c542"/>
+  <circle cx="256" cy="224" r="52" fill="#ffd96a"/>
+  <path d="M238 178h38c24 0 42 15 42 36 0 18-12 30-29 35l35 42h-39l-30-38h-1v38h-31V178h15Zm16 27v27h18c10 0 17-5 17-14s-7-13-17-13h-18Z" fill="#007a4f"/>
+  <path d="M158 348c54-46 142-46 196 0" fill="none" stroke="#007a4f" stroke-width="24" stroke-linecap="round"/>
+</svg>

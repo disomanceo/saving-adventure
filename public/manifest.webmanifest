@@ -1,0 +1,19 @@
+{
+  "name": "Saving Adventure School",
+  "short_name": "Saving",
+  "description": "เกมภารกิจเรียนรู้การออมเงินไปด้วยกัน",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7faf6",
+  "theme_color": "#007a4f",
+  "icons": [
+    {
+      "src": "/saving-adventure.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
