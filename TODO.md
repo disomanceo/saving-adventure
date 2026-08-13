@@ -3,33 +3,31 @@
 Last updated: 2026-08-13
 
 ## Current status
-- Project is on branch `main`.
-- Latest existing commit before this TODO update: `4919b59 feat: add project updates`.
-- Working tree was clean before creating this TODO.
-- Git branch currently has no configured upstream (`git status` showed only `## main`).
+- Project is on branch `main` and tracks `origin/main`.
+- Firebase Authentication is wired into the app.
+- The first screen is now an authentication screen instead of the old landing page.
 
 ## Completed this round
-- Verified Git status.
-- Verified recent Git commit history.
-- Confirmed the remaining Git issue is missing upstream tracking for `main`.
-- Added this `TODO.md` so every future work round records completed work, pending work, issues, and next steps.
+- Added a full Login screen.
+- Added a visible `สมัครสมาชิก` tab/button on the Login screen.
+- Added registration form fields: display name, email, password, confirm password.
+- Added Firebase Email/Password registration with `createUserWithEmailAndPassword`.
+- Added Firebase login with `signInWithEmailAndPassword`.
+- Added Firebase auth session monitoring with `onAuthStateChanged`.
+- Added logout support.
+- Added Thai error messages for common Firebase Auth errors.
+- Added responsive/mobile-first styling for Login/Register.
+- Protected the main app so it is shown only after successful authentication.
+- Verified production build successfully with `npm run build`.
 
-## Pending
-- Configure upstream: `main` -> `origin/main`.
-- Push current commits to GitHub after upstream is configured.
-- Verify local `main` and `origin/main` are synchronized.
+## Important Firebase setting
+For registration/login to work in production, Firebase Console must have Authentication > Sign-in method > Email/Password enabled. If it is disabled, the app will display a Thai message explaining that Email/Password authentication is not enabled.
 
-## Blocker
-Personal MCP Agent V3 currently exposes `git_push`, but it only pushes to an already-configured upstream. It does not expose a Git command for `git push -u origin main` or `git branch --set-upstream-to`.
-
-## Next step
-Run once in the project terminal:
-
-```bash
-git push -u origin main
-```
-
-After that, Personal MCP Agent V3 can use its normal `git_push` operation for subsequent rounds.
+## Pending / next round
+- Test real account registration against Firebase Authentication on the deployed site.
+- Decide whether user profiles should also be saved in Firestore (student/teacher role, class, avatar, level, etc.).
+- Add forgot-password flow.
+- Continue building the post-login Saving Adventure dashboard and student saving features.
 
 ## Workflow rule
 At the end of every work round:
@@ -37,4 +35,4 @@ At the end of every work round:
 2. Record completed work and remaining work.
 3. Run relevant checks/build.
 4. Commit the completed round.
-5. Push when Git upstream is available.
+5. Push to `origin/main`.
